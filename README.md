@@ -15,11 +15,11 @@ Para este projeto foram utilizados as seguintes tecnologias/ferramentas e versõ
 Instalação do Node
 - Baixar e instalar o nvm-setup
 - Executar o comando: nvm install 16.13.1
-- Para verificar se a versão correta está instalada, execute o comando: node -v
+- Para verificar se a versão correta está instalada, execute o comando: `node -v`
 
 Instalação do Cypress
-- Dentro do diretório do projeto, abrir o terminal e rodar o comando: npm install cypress --save-dev
-- Para verificar se a instalação está correta, execute o cypress com o comando: npx cypress open
+- Dentro do diretório do projeto, abrir o terminal e rodar o comando: `npm install cypress --save-dev`
+- Para verificar se a instalação está correta, execute o cypress com o comando: `npx cypress open`
 
 Instalação do Visual Studio Code
 - Entrar na página oficial e seguir os passos de instalação padrão: https://code.visualstudio.com/
@@ -27,10 +27,10 @@ Instalação do Visual Studio Code
 # Outras Informações
 
 Foi usado o Xpath no projeto para a captura de alguns elementos, como ele não é nativo, é necessário fazer a instalação
-- Comando para instalar o xpath: npm instalar -D cypress-xpath
+- Comando para instalar o xpath: `npm instalar -D cypress-xpath`
 
 Foi usado a ferramenta mochawesome no projeto para fazer o report e trazer os resultados dentro do próprio projeto.
-- Comando para instalar o mochawesome: npm install --save-dev mochawesome
-- Comando para rodar o mochawesome: npx cypress run --reporter mochawesome
+- Comando para instalar o mochawesome: `npm install --save-dev mochawesome`
+- Comando para rodar o mochawesome: `npx cypress run --reporter mochawesome`
 
-Após clonar o repositório executar o comando: npm install
+Após clonar o repositório, para poder criar a pasta node_modules, execute o comando: `npm install`
