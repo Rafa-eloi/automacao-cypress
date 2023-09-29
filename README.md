@@ -14,7 +14,7 @@ Instalação do Node
 - Para verificar se a versão correta está instalada, execute o comando: node -v
 
 Instalação do Cypress
-- Dentro do diretório do projeto, abrir o terminal e rodar o comando: npm install cypress
+- Dentro do diretório do projeto, abrir o terminal e rodar o comando: npm install cypress --save-dev
 - Para verificar se a instalação está correta, execute o cypress com o comando: npx cypress open
 
 Instalação do Visual Studio Code
