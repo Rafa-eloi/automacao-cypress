@@ -1,4 +1,6 @@
 describe('Adicionar produto ao carrinho de compra', () => {
+    
+    require("cypress-xpath");
 
     beforeEach(() => {
         //acessar a página
@@ -17,26 +19,8 @@ describe('Adicionar produto ao carrinho de compra', () => {
         cy.contains('span', 'Men').click();
 
         //clicar no link para escolher uma camiseta
-
-
-
-        //cy.xpath('//*[@id="maincontent"]/div[4]/div[2]/div/div/ul[1]/li[3]/a').click();
-
-        //cy.contains('a', 'Tees').click();
-
-        cy.contains('ul[class="items"]', 'a', 'Tees').click()
-
-        
-        
-        //FALTANDO ESSA PARTE PARA ADICIONAR PRODUTO
-     
-    
-
-        //cy.get('button[id="category"]').click()
-
-        cy.contains('div[class="products wrapper grid products-grid"]', 'div[id="product-item-info_486"]').click();
-
-       // cy.contains('span[class="product-image-container product-image-container-486"]', 'a', 'Ryker LumaTech&trade; Tee (Crew-neck)').click();
+        cy.xpath('//*[@id="maincontent"]/div[4]/div[2]/div/div/ul[1]/li[3]/a').click();
+        cy.xpath('//*[@id="product-item-info_486"]/a/span/span/img').click();
 
         //clicar para escolher o tamanho
         cy.get('[id="option-label-size-157-item-173"]').click();
@@ -45,7 +29,7 @@ describe('Adicionar produto ao carrinho de compra', () => {
         cy.get('[id="option-label-color-93-item-49"]').click();
 
         //clicar no botão de adicionar ao carrinho
-        cy.contains('a', 'Add to Cart').click();
+        cy.contains('button', 'Add to Cart').click();
 
     })
 })
