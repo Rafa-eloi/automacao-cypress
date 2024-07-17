@@ -27,7 +27,7 @@ Instalação do Visual Studio Code
 # Outras Informações
 
 Foi usado o Xpath no projeto para a captura de alguns elementos, como ele não é nativo, é necessário fazer a instalação
-- Comando para instalar o xpath: `npm instalar -D cypress-xpath`
+- Comando para instalar o xpath: `npm install -D cypress-xpath`
 
 Foi usado a ferramenta mochawesome no projeto para fazer o report e trazer os resultados dentro do próprio projeto.
 - Comando para instalar o mochawesome: `npm install --save-dev mochawesome`
